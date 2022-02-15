@@ -2,13 +2,14 @@
 tags
 doc/html
 doc/*.log
+missionlib/testing/*.xcodeproj/*
 .DS_Store
 build*
 .nfs*
 share/
 __pycache__
 pymavlink/generator/C/
-pymavlink/generator/C/
+pymavlink/generator/
 pymavlink/generator/python/
 pymavlink/generator/python/
 apidocs/
@@ -26,4 +27,3 @@ include/
 .tags*
 *.pyc
 include/mavlink/v1.0
-.idea
