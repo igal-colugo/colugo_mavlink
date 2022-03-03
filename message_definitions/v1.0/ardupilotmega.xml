@@ -1585,7 +1585,7 @@
 	<message id="11021" name="COLUGO_GET_RESPONSE">
       <description>internal needs</description>	  
       <field type="uint8_t" name="perform_pf">preflight done</field>
-      <field type="uint8_t" name="colugo_fails">colugo pitch roll alt fails</field>
+      <field type="uint16_t" name="colugo_fails">colugo pitch roll alt fails</field>
       <field type="uint8_t" name="colugo_switchs_cmdreadbck">buttons</field>
     </message>
 	
