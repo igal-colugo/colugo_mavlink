@@ -39,6 +39,19 @@
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
+	  <entry value="248" name="MAV_CMD_DO_EXT2">
+        <description>colugo</description>
+        <param index="1">enable (1: enable, 0:disable)</param>
+        <param index="2">Empty</param>
+        <param index="3">Empty</param>
+        <param index="4">Empty</param>
+        <param index="5">Empty</param>
+        <param index="6">Empty</param>
+        <param index="7">Empty</param>
+		<param index="8">Empty</param>
+        <param index="9">Empty</param>
+      </entry>
+	  
       <entry value="83" name="MAV_CMD_NAV_ALTITUDE_WAIT">
         <description>Mission command to wait for an altitude or downwards vertical speed. This is meant for high altitude balloon launches, allowing the aircraft to be idle until either an altitude is reached or a negative vertical speed is reached (indicating early balloon burst). The wiggle time is how often to wiggle the control surfaces to prevent them seizing up.</description>
         <param index="1">altitude (m)</param>
@@ -229,8 +242,9 @@
         <param index="4">release rate (meters/second)</param>
         <param index="5">Empty</param>
         <param index="6">Empty</param>
-        <param index="7">Empty</param>
+        <param index="7">Empty</param>		
       </entry>
+	   
     </enum>
     <!-- AP_Limits Enums -->
     <enum name="LIMITS_STATE">
@@ -336,6 +350,7 @@
     </enum>
     <!-- camera feedback flags, a little bit of future-proofing -->
     <enum name="CAMERA_FEEDBACK_FLAGS">
+	
       <entry value="0" name="CAMERA_FEEDBACK_PHOTO">
         <description>Shooting photos, not video</description>
       </entry>
@@ -605,7 +620,7 @@
       </entry>
       <entry value="13" name="GOPRO_FRAME_RATE_12_5">
         <description>12.5 FPS</description>
-      </entry>
+      </entry>	   
     </enum>
     <enum name="GOPRO_FIELD_OF_VIEW">
       <entry value="0" name="GOPRO_FIELD_OF_VIEW_WIDE">

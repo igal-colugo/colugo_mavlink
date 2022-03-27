@@ -1,9 +1,10 @@
+[![Build Status](https://travis-ci.org/ArduPilot/pymavlink.svg?branch=master)](https://travis-ci.org/ArduPilot/pymavlink)
 # Pymavlink
 This is a python implementation of the MAVLink protocol.
 
 # Documentation
 
-Please see http://dev.ardupilot.org/ for documentation.
+Please see http://ardupilot.org/dev/docs/mavlink-commands.html for documentation.
 
 For realtime discussion please see the pymavlink gitter channel here
 https://gitter.im/ArduPilot/pymavlink
@@ -16,7 +17,7 @@ https://gitter.im/ArduPilot/pymavlink
 Pymavlink is currently a Python 2 package. It is recommended to install and use it with Python 2. 
 
 However an initial Python 3 support is given.
-The following instruction assume your are using Python 2 and an Debian-based (like Ubuntu) installation.
+The following instructions assume you are using Python 2 and a Debian-based (like Ubuntu) installation.
 
 ## Dependencies
 
@@ -41,7 +42,7 @@ Using pip you can install the required dependencies for pymavlink :
 sudo pip2 install -U future lxml
 ```
 
-The -U parameter allow to update future and lxml version if it is already installed.
+The -U parameter allows updating future and lxml version if it is already installed.
 
 ### On Windows
 
@@ -59,7 +60,7 @@ sudo pip2 install -U pymavlink
 ```
 The -U parameter allow to update pymavlink version if it is already installed.
 
-### For developpers
+### For developers
 
 On the pymavlink directory, you can use :
 ```bash
