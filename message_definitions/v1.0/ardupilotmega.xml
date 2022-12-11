@@ -1602,6 +1602,7 @@
       <field type="uint8_t" name="perform_pf">preflight done</field>
       <field type="uint16_t" name="colugo_fails">colugo pitch roll alt fails</field>
       <field type="uint8_t" name="colugo_switchs_cmdreadbck">buttons</field>
+	  <field type="uint32_t" name="colugo_init_done">micro secs for init time done</field>
     </message>
 	
   </messages>
