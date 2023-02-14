@@ -1605,5 +1605,12 @@
 	  <field type="uint32_t" name="colugo_init_done">micro secs for init time done</field>
     </message>
 	
+	<message id="11023" name="COLUGO_SYNGPS_STATUS">
+      <description>syntetic gps data</description>	  
+      <field type="uint32_t" name="status">bit field of statuses</field>
+	  <field type="uint32_t" name="status2">another bit field of statuses</field>
+	  <field type="uint32_t" name="Errors">bit field of Errors</field>      
+    </message>
+	
   </messages>
 </mavlink>
