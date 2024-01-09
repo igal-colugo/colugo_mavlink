@@ -26,9 +26,9 @@
         <param index="5">Empty</param>
         <param index="6">Empty</param>
         <param index="7">Empty</param>
-     </entry>
+      </entry>
 
-     <entry value="40603" name="MAV_CMD_ASIO_SET_NAV_MODE" hasLocation="false" isDestination="false">
+      <entry value="40603" name="MAV_CMD_ASIO_SET_NAV_MODE" hasLocation="false" isDestination="false">
         <description>Selecting navigation mode. Require reset after set</description>
         <param index="1" label="nav_mode" enum="ASIO_NAV_MODE"></param>
         <param index="2">Empty</param>
@@ -39,7 +39,7 @@
         <param index="7">Empty</param>
       </entry>
 
-     <entry value="40604" name="MAV_CMD_ASIO_SET_INIT_LOC" hasLocation="true" isDestination="false">
+      <entry value="40604" name="MAV_CMD_ASIO_SET_INIT_LOC" hasLocation="true" isDestination="false">
         <description>Selecting initial location. set 0 to clear</description>
         <param index="1">Empty</param>
         <param index="2">Empty</param>
@@ -48,9 +48,9 @@
         <param index="5" label="Latitude">Latitude</param>
         <param index="6" label="Longitude">Longitude</param>
         <param index="7" label="Altitude" units="m">Altitude (Note: not implemented on Asio side)</param>
-     </entry>
+      </entry>
 
-     <entry value="40605" name="MAV_CMD_ASIO_RESET" hasLocation="false" isDestination="false">
+      <entry value="40605" name="MAV_CMD_ASIO_RESET" hasLocation="false" isDestination="false">
         <description>Reset</description>
         <param index="1">Empty</param>
         <param index="2">Empty</param>
@@ -59,7 +59,7 @@
         <param index="5">Empty</param>
         <param index="6">Empty</param>
         <param index="7">Empty</param>
-     </entry>
+      </entry>
 
       <entry value="40606" name="MAV_CMD_ASIO_CAL" hasLocation="false" isDestination="false">
         <description>Initiate calibration of installation angles</description>
@@ -71,7 +71,7 @@
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
-          
+
       <entry value="40607" name="MAV_CMD_ASIO_SET_SLAM_MODE" hasLocation="false" isDestination="false">
         <description>Enabling Force SLAM mode</description>
         <param index="1" label="slam_mode" enum="ASIO_SLAM_MODE"></param>
@@ -82,7 +82,7 @@
         <param index="6">Empty</param>
         <param index="7">Empty</param>
       </entry>
-      
+
       <entry value="40608" name="MAV_CMD_ASIO_SET_SLAM_TIMEOUT" hasLocation="false" isDestination="false">
         <description>Set timeout to SLAM mode. After timeout, if GPS is valid, take GPS data, othewise keep SLAM</description>
         <param index="1" label="slam_timeout" units="sec"></param>
@@ -105,7 +105,7 @@
         <param index="7">Empty</param>
       </entry>
 
-<entry value="40610" name="MAV_CMD_ASIO_SET_DB_REC" hasLocation="false" isDestination="false">
+      <entry value="40610" name="MAV_CMD_ASIO_SET_DB_REC" hasLocation="false" isDestination="false">
         <description>Not Implemented - DO NOT USE</description>
         <param index="1" label="db_rec_mode" enum="ASIO_DB_REC"></param>
         <param index="2">Empty</param>
@@ -114,7 +114,7 @@
         <param index="5">Empty</param>
         <param index="6">Empty</param>
         <param index="7">Empty</param>
-     </entry>
+      </entry>
     </enum>
 
     <enum name="ASIO_SENSOR">
@@ -155,7 +155,7 @@
         <description>do not use gps at all, if slam is used for more than X Sec. will try to read gps pos, othewise will keep slam (pre define parameter [s])</description>
       </entry>
       <entry value="2" name="ASIO_NAV_MODE_GPS_ON_TAKEOFF">
-        <description>if gps is valid, use it when close to home (pre define parameter [m]). 
+        <description>if gps is valid, use it when close to home (pre define parameter [m]).
         or if slam where used for more than X Sec (pre define parameter [s])</description>
       </entry>
       <entry value="3" name="ASIO_NAV_MODE_USE_GPS_WHEN_FIX">
@@ -204,7 +204,7 @@
         <description>Not Implemented</description>
       </entry>
     </enum>
-  
+
     <enum name="ASIO_NAV_OUTPUT">
       <entry value="0" name="ASIO_NAV_OUTPUT_GPS">
         <description>GPS data is outputted as the navigation solution - can be during takeoff or after SLAM timeout</description>
@@ -213,7 +213,7 @@
         <description>Optical solution data is outputted as the navigation solution</description>
       </entry>
     </enum>
-    
+
     <enum name="GPS_JAMMING_STATE">
       <entry value="0" name="GPS_JAMMING_STATE_OK">
         <description>GPS valid</description>
@@ -225,7 +225,7 @@
         <description>GPS is jammed valid</description>
       </entry>
     </enum>
-      
+
     <enum name="ASIO_ERROR" bitmask="true">
       <entry value="1" name="ASIO_ERROR_CRITICAL">
         <description>Critical system error</description>
@@ -252,7 +252,7 @@
         <description>Not Implemented</description>
       </entry>
     </enum>
-    
+
     <enum name="ASIO_CALIBRATION_STATE">
       <entry value="0" name="ASIO_CALIBRATION_STATE_UNKNOWN">
         <description/>
@@ -264,8 +264,8 @@
         <description>Calibration procedure is in progress</description>
       </entry>
     </enum>
-    
-    <enum name="COMPASS_POINT"  bitmask="true">
+
+    <enum name="COMPASS_POINT" bitmask="true">
       <entry value="1" name="COMPASS_POINT_NORTH">
         <description/>
       </entry>
