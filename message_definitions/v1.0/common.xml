@@ -4537,6 +4537,7 @@
       <entry value="103" name="FAILURE_UNIT_SYSTEM_AVOIDANCE"/>
       <entry value="104" name="FAILURE_UNIT_SYSTEM_RC_SIGNAL"/>
       <entry value="105" name="FAILURE_UNIT_SYSTEM_MAVLINK_SIGNAL"/>
+      <entry value="201" name="FAILURE_UNIT_SYSTEM_VTOL"/>
     </enum>
     <enum name="FAILURE_TYPE">
       <!-- This enum is work-in-progress and it can therefore change. It should NOT be used in stable production environments. -->
