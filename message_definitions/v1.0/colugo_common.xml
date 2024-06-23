@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<mavlink>
+
+  <version>3</version>
+  <dialect>0</dialect>
+
+  <enums>
+
+    <enum name="MAV_CMD">
+
+      <description>Additional Commands to be executed by the MAV.</description>
+
+      <entry value="51001" name="MAV_CMD_LIGHTS" hasLocation="false" isDestination="false">
+        <description>Turn off/on lights</description>
+        <param index="1" label="Mode" minValue="0" maxValue="1" increment="1">1 turn lights on, 0 turn lights off.</param>
+        <param index="2">Empty</param>
+        <param index="3">Empty</param>
+        <param index="4">Empty</param>
+        <param index="5">Empty</param>
+        <param index="6">Empty</param>
+        <param index="7">Empty</param>
+      </entry>
+
+      <entry value="51002" name="MAV_CMD_STROBE" hasLocation="false" isDestination="false">
+        <description>Turn off/on strobe</description>
+        <param index="1" label="Mode" minValue="0" maxValue="1" increment="1">1 turn strobe on, 0 turn strobe off.</param>
+        <param index="2">Empty</param>
+        <param index="3">Empty</param>
+        <param index="4">Empty</param>
+        <param index="5">Empty</param>
+        <param index="6">Empty</param>
+        <param index="7">Empty</param>
+      </entry>
+
+    </enum>
+
+  </enums>
+
+  <messages>
+
+    <message id="51001" name="LIGHTS_MODE">
+
+      <description>Lights mode.</description>
+
+      <field type="uint8_t" name="mode">Lights mode.</field>
+
+    </message>
+
+    <message id="51002" name="STROBE_MODE">
+
+      <description>Strobe mode.</description>
+
+      <field type="uint8_t" name="mode">Strobe mode.</field>
+
+    </message>
+
+    <message id="51036" name="HITL_SERVO_OUTPUT_RAW">
+
+      <description>Superseded by ACTUATOR_OUTPUT_STATUS. The RAW values of the hitl servo outputs. The standard PPM modulation is as follows: 1000 microseconds: 0%, 2000 microseconds: 100%.</description>
+
+      <field type="uint32_t" name="time_usec" units="us">Timestamp (UNIX Epoch time or time since system boot). The receiving end can infer timestamp format (since 1.1.1970 or since system boot) by checking for the magnitude of the number.</field>
+      <field type="uint8_t" name="port">Hitl servo output port.</field>
+      <field type="uint16_t" name="hitl_servo1_raw" units="us">Hitl_servo output 1 value</field>
+      <field type="uint16_t" name="hitl_servo2_raw" units="us">Hitl_servo output 2 value</field>
+      <field type="uint16_t" name="hitl_servo3_raw" units="us">Hitl_servo output 3 value</field>
+      <field type="uint16_t" name="hitl_servo4_raw" units="us">Hitl_servo output 4 value</field>
+      <field type="uint16_t" name="hitl_servo5_raw" units="us">Hitl_servo output 5 value</field>
+      <field type="uint16_t" name="hitl_servo6_raw" units="us">Hitl_servo output 6 value</field>
+      <field type="uint16_t" name="hitl_servo7_raw" units="us">Hitl_servo output 7 value</field>
+      <field type="uint16_t" name="hitl_servo8_raw" units="us">Hitl_servo output 8 value</field>
+      <field type="uint16_t" name="hitl_servo9_raw" units="us">Hitl_servo output 9 value</field>
+      <field type="uint16_t" name="hitl_servo10_raw" units="us">Hitl_servo output 10 value</field>
+      <field type="uint16_t" name="hitl_servo11_raw" units="us">Hitl_servo output 11 value</field>
+      <field type="uint16_t" name="hitl_servo12_raw" units="us">Hitl_servo output 12 value</field>
+      <field type="uint16_t" name="hitl_servo13_raw" units="us">Hitl_servo output 13 value</field>
+      <field type="uint16_t" name="hitl_servo14_raw" units="us">Hitl_servo output 14 value</field>
+      <field type="uint16_t" name="hitl_servo15_raw" units="us">Hitl_servo output 15 value</field>
+      <field type="uint16_t" name="hitl_servo16_raw" units="us">Hitl_servo output 16 value</field>
+
+    </message>
+
+
+  </messages>
+
+</mavlink>
