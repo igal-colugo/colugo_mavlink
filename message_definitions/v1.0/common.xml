@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <mavlink>
+
   <include>minimal.xml</include>
   <include>asio_mavlink_navguard.xml</include>
   <include>currawong_mavlink.xml</include>
   <include>hfe_mavlink.xml</include>
+  <include>colugo_common.xml</include>
+
   <version>3</version>
   <dialect>0</dialect>
   <enums>
