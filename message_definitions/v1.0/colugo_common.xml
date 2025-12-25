@@ -53,6 +53,20 @@
       <field type="uint8_t" name="mode">Strobe mode.</field>
 
     </message>
+    
+    <message id="51003" name="C_UPL">
+	    <description>colugo proprietary uplink message</description>
+	    <field type="uint32_t" name="type">uplink type</field>
+	    <field type="uint32_t" name="subType">sub type...</field>
+    <field type="uint8_t" name="param1">Parameter 1</field>
+    </message>
+
+    <message id="51004" name="C_STATUS_DNL">
+	    <description>colugo downlink message</description>
+	    <field type="uint32_t" name="status">Status value</field>
+	    <field type="uint8_t" name="value">Data value</field>
+    </message>
+
 
     <message id="51036" name="HITL_SERVO_OUTPUT_RAW">
 
